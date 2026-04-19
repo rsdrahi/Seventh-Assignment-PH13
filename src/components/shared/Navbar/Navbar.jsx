@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router';
 const Navbar = () => {
   return (
 
-    <nav className='shadow'>
+    <nav className='shadow bg-white'>
       <div className='flex justify-between container mx-auto p-3'>
         <h2 className='text-2xl font-bold'>
           <span className='text-[#1F2937]'>Keen</span>
