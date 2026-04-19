@@ -7,6 +7,7 @@ const Homepage = () => {
     <>
       <Banner></Banner>
       <BannerCard></BannerCard>
+      <div className="divider container mx-auto my-5 opacity-40"></div>
     </>
   );
 };
