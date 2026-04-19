@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "david.kim@gmail.com",
+    "days_since_contact": 18,
+    "status": "almost due",
+    "tags": ["work", "project team"],
+    "bio": "Colleague from product team. We usually sync on weekly updates.",
+    "goal": 21,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "emma.wilson@yahoo.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["family", "cousin"],
+    "bio": "My cousin living in London. We catch up on video calls.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "lisa.nakamura@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "design"],
+    "bio": "UX designer friend. We share design ideas regularly.",
+    "goal": 10,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "james.wright@hotmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["travel", "friend"],
+    "bio": "Met during a trip to Thailand. Planning another trip together.",
+    "goal": 20,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 5,
+    "name": "Sophia Martinez",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "sophia.martinez@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["gym", "health"],
+    "bio": "Workout partner. We motivate each other to stay consistent.",
+    "goal": 10,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 6,
+    "name": "Michael Chen",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "michael.chen@gmail.com",
+    "days_since_contact": 16,
+    "status": "almost due",
+    "tags": ["business", "startup"],
+    "bio": "Startup co-founder. Discuss business ideas frequently.",
+    "goal": 18,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 7,
+    "name": "Ayesha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["college", "close friend"],
+    "bio": "Best friend from university. We talk almost every week.",
+    "goal": 7,
+    "next_due_date": "2026-04-30"
+  },
+  {
+    "id": 8,
+    "name": "Daniel Smith",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "daniel.smith@gmail.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["mentor", "career"],
+    "bio": "Career mentor who helped me transition into tech.",
+    "goal": 15,
+    "next_due_date": "2026-04-12"
+  },
+  {
+    "id": 9,
+    "name": "Fatima Noor",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "fatima.noor@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["volunteer", "community"],
+    "bio": "Met during a local community project in Sylhet. We stay in touch occasionally.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 10,
+    "name": "Ryan Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "ryan.ahmed@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["gaming", "online friend"],
+    "bio": "Online gaming friend. We usually play together on weekends.",
+    "goal": 7,
+    "next_due_date": "2026-05-01"
+  }
+]
