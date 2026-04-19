@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FriendsCard = ({ friend }) => {
 
@@ -7,7 +8,7 @@ const FriendsCard = ({ friend }) => {
     status === "overdue" ? "bg-[#EF4444]" : status === "almost due" ? "bg-[#EFAD44]" : "bg-[#244D3F]";
   
   return (
-    <div className='shadow rounded-xl text-center space-y-2 p-4 bg-white mt-6'>
+    <Link to={`/cardDetails/${friend.id}`} className='shadow rounded-xl text-center space-y-2 p-4 bg-white mt-6'>
       <img src={picture} alt="" className='rounded-full mx-auto' />
       <h2 className='font-bold text-2xl'>{name}</h2>
       <p className='text-[#64748B] text-xl'>{days_since_contact}d ago</p>
@@ -23,7 +24,7 @@ const FriendsCard = ({ friend }) => {
         {status.toLowerCase()}
       </p>
      </div>
-    </div>
+    </Link>
   );
 };
 

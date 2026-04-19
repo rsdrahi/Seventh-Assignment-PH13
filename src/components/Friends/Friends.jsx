@@ -1,6 +1,7 @@
 import React, { use, useEffect, useState } from 'react';
 import FriendsCard from './FriendsCard';
 import { RingLoader } from 'react-spinners';
+import UseData from '../../hooks/UseData';
 
 // const friendsPromise = fetch("/data.json")
 //   .then((res) => res.json());
@@ -9,25 +10,7 @@ const Friends = () => {
 
   // const friends = use(friendsPromise);
   // console.log(friends, "friends");
-  const [friends, setFriends] = useState([]);
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const friendsData = async () => {
-      const res = await fetch("/data.json")
-      const data = await res.json();
-      console.log(data, "data");
-      setFriends(data);
-      setTimeout(() => {
-        setFriends(data);
-        setLoading(false);
-      }, 1000)
-    };
-    friendsData();
-  }, [])
-
-  console.log(friends, "friends");
-  console.log(loading, "loading");
+  const { friends, loading } = UseData();
 
   return (
     <div className='container mx-auto mb-6'>
