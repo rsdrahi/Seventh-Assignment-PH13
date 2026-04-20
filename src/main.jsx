@@ -9,6 +9,7 @@ import Stats from './pages/Stats/Stats'
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 import Homepage from './pages/Homepage/Homepage'
 import CardDetails from './pages/CardDetails/CardDetails'
+import ButtonProvider from './context/ButtonProvider'
 
 const router = createBrowserRouter(
   [
@@ -42,6 +43,8 @@ const router = createBrowserRouter(
 
 createRoot (document.getElementById('root')).render(
   <StrictMode>
+    <ButtonProvider>
     <RouterProvider router={router} />
+    </ButtonProvider>
   </StrictMode>
 )

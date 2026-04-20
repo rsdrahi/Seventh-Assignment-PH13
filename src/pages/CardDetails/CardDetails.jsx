@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router';
 import UseData from '../../hooks/UseData';
 import CardDetailContent from './CardDetailContent';
@@ -7,6 +7,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { LuArchive, LuMessageSquareMore } from 'react-icons/lu';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { RiDeleteBin5Line, RiNotificationSnoozeLine } from 'react-icons/ri';
+import { CallButtonContext } from '../../context/ButtonProvider';
 
 const CardDetails = () => {
 
@@ -14,6 +15,8 @@ const CardDetails = () => {
   console.log(id, "id");
   const { friends, loading } = UseData();
   const expectedFriend = friends.find((friend) => friend.id == id);
+  // const [buttonContext, setButtonContext] = useState([]);
+  const { buttonContext, setButtonContext} = useContext(CallButtonContext);
   console.log(friends, loading, "friends", "loading");
   console.log(expectedFriend, "expectedFriend");
 
@@ -24,6 +27,17 @@ const CardDetails = () => {
    </div>
     )
   }
+
+  const handleButtonContext = (type) => {
+
+    const newData = {
+     type: type,
+     date: Date(),
+     friend:  expectedFriend
+    }
+    setButtonContext([...buttonContext, newData]);
+  }
+
   const { name, picture, status, tags, days_since_contact, email, bio, next_due_date, goal } = expectedFriend 
   
   const statusFormat =
@@ -89,13 +103,13 @@ const CardDetails = () => {
           <div className='shadow rounded-md p-6 bg-white'>
             <h3 className='text-[#244D3F] font-medium text-xl'>Quick Check-In</h3>
             <div className='flex gap-4 p-6 justify-between'>
-              <button className='btn flex flex-col items-center rounded-lg px-16 py-8'>
+              <button className='btn flex flex-col items-center rounded-lg px-16 py-8' onClick={() => handleButtonContext('call')}>
                 <FiPhoneCall></FiPhoneCall>
                 Call</button>
-              <button className='btn flex flex-col items-center rounded-lg px-16 py-8'>
+              <button className='btn flex flex-col items-center rounded-lg px-16 py-8'  onClick={() => handleButtonContext('text')}>
                 <LuMessageSquareMore></LuMessageSquareMore>
                 Text</button>
-              <button className='btn flex flex-col items-center rounded-lg px-16 py-8'>
+              <button className='btn flex flex-col items-center rounded-lg px-16 py-8' onClick={() => handleButtonContext('video')}>
                 <IoVideocamOutline></IoVideocamOutline>
                 Video</button>
             </div>
