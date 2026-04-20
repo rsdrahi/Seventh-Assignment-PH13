@@ -101,22 +101,25 @@ const CardDetails = () => {
             </div>
 
           </div>
-            <div className='shadow p-6 rounded-md bg-white space-y-3'>
-              <h3 className='text-xl text-[#244D3F] font-medium'>Relationship Goal</h3>
+            <div className='shadow p-6 rounded-md bg-white flex justify-between'>
+            <div className='space-y-3'>
+               <h3 className='text-xl text-[#244D3F] font-medium'>Relationship Goal</h3>
               <p className='text-[#64748B]'>Connect every
               <span className='font-medium text-black'> 30 days</span></p>
+           </div>
+            <button className='btn border rounded-lg px-6 py-2'>Edit</button>
           </div>  
           <div className='shadow rounded-md p-6 bg-white'>
             <h3 className='text-[#244D3F] font-medium text-xl'>Quick Check-In</h3>
-            <div className='flex gap-4 p-6 justify-between'>
-              <button className='btn flex flex-col items-center rounded-lg px-16 py-8' onClick={() => handleButtonContext('call')}>
-                <FiPhoneCall></FiPhoneCall>
+            <div className='grid grid-cols-3 gap-3 p-6'>
+              <button className='border border-gray-200 bg-gray-100 flex flex-col items-center  justify-center rounded-lg py-6 gap-2 cursor-pointer' onClick={() => handleButtonContext('call')}>
+                <FiPhoneCall className='h-8 w-8'></FiPhoneCall>
                 Call</button>
-              <button className='btn flex flex-col items-center rounded-lg px-16 py-8'  onClick={() => handleButtonContext('text')}>
-                <LuMessageSquareMore></LuMessageSquareMore>
+              <button className='border border-gray-200 bg-gray-100 flex flex-col items-center justify-center rounded-lg py-6 gap-2 cursor-pointer'  onClick={() => handleButtonContext('text')}>
+                <LuMessageSquareMore className='h-8 w-8'></LuMessageSquareMore>
                 Text</button>
-              <button className='btn flex flex-col items-center rounded-lg px-16 py-8' onClick={() => handleButtonContext('video')}>
-                <IoVideocamOutline></IoVideocamOutline>
+              <button className='border border-gray-200 bg-gray-100 flex flex-col items-center justify-center rounded-lg gap-2 py-6 cursor-pointer' onClick={() => handleButtonContext('video')}>
+                <IoVideocamOutline className='h-8 w-8'></IoVideocamOutline>
                 Video</button>
             </div>
           </div>
