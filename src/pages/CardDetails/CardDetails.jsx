@@ -51,7 +51,7 @@ const CardDetails = () => {
 
   return (
     <div className='container mx-auto mt-12 mb-12'>
-      <div className='grid grid-cols-3 gap-6'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
         {/* left side */}
         <div className='col-span-1 shadow rounded-lg p-4 space-y-3 bg-white flex flex-col items-center text-center'>
           <img src={picture} alt={picture}  className='h-16 w-16 rounded-full'/>

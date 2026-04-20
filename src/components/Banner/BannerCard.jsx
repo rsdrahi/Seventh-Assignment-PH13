@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerCard = () => {
   return (
-    <div className='grid grid-cols-4 mt-12 container mx-auto gap-2'>
+    <div className='grid sm:grid-cols-2 lg:grid-cols-4 mt-12 container mx-auto gap-2'>
       <div className='shadow-lg text-center py-8 rounded-md bg-white'>
         <h3 className='text-[#244D3F] font-bold text-2xl space-y-2'>
           10

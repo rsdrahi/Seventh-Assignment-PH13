@@ -16,8 +16,8 @@ const Friends = () => {
     <div className='container mx-auto mb-6'>
       <h2 className='font-bold text-2xl'>Your Friends</h2>
 
-      Total Friends:  {friends.length} 
-      <div className='grid grid-cols-4 gap-6'>
+      {/* Total Friends:  {friends.length}  */}
+      <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-6'>
         {loading ? (
           <div className='flex justify-center items-center col-span-4 min-h-40'>
             <RingLoader color='#244D3F'/>
