@@ -8,6 +8,7 @@ import { LuArchive, LuMessageSquareMore } from 'react-icons/lu';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { RiDeleteBin5Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { CallButtonContext } from '../../context/ButtonProvider';
+import { toast } from 'react-toastify';
 
 const CardDetails = () => {
 
@@ -36,6 +37,11 @@ const CardDetails = () => {
      friend:  expectedFriend
     }
     setButtonContext([...buttonContext, newData]);
+    toast.success(
+      type === "call" ? `${expectedFriend.name} is called` :
+        type === "text " ? `${expectedFriend.name} is text` :
+          `${expectedFriend.name} is video called` 
+    )
   }
 
   const { name, picture, status, tags, days_since_contact, email, bio, next_due_date, goal } = expectedFriend 
