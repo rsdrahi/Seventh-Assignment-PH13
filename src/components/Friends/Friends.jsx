@@ -1,4 +1,3 @@
-import React, { use, useEffect, useState } from 'react';
 import FriendsCard from './FriendsCard';
 import { RingLoader } from 'react-spinners';
 import UseData from '../../hooks/UseData';
