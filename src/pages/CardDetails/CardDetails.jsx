@@ -39,7 +39,7 @@ const CardDetails = () => {
     setButtonContext([...buttonContext, newData]);
     toast.success(
       type === "call" ? `${expectedFriend.name} is called` :
-        type === "text " ? `${expectedFriend.name} is text` :
+        type === "text" ? `${expectedFriend.name} is text` :
           `${expectedFriend.name} is video called` 
     )
   }
